@@ -3,7 +3,7 @@ services:
     platform: linux/arm64
     build:
       context: .
-      dockerfile: ${DOCKERFILE:-Dockerfile.arm64}
+      dockerfile: ${DOCKERFILE:-Dockerfile}
       args:
         TARGETPLATFORM: ${TARGETPLATFORM:-linux/arm64}
     ports:
